@@ -326,3 +326,37 @@ body {
   border-radius: 50%;
   margin-right: 10px;
 }
+
+.musica button {
+  background-color: #ffcce0;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 12px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.musica button:hover {
+  background-color: #ff80a0;
+  color: white;
+}
+
+.playlist button {
+  background-color: #ffe6f0;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playlist button:hover {
+  background-color: #ff99cc;
+  color: white;
+}
+
