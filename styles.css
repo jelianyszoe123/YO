@@ -360,3 +360,10 @@ body {
   color: white;
 }
 
+.fondo {
+   background-image: url('fondolindo.jpg'); /* Cambia 'tu-imagen.jpg' por el nombre de tu imagen *'); /* Reemplázalo con tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Para que ocupe toda la pantalla */
+    background-repeat: no-repeat;
+}
