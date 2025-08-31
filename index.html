@@ -178,3 +178,84 @@
   <source src="KATSEYE - Gabriela (Lyrics).mp4" type="audio/mpeg">
   Tu navegador no soporta audio.
 </audio>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grow!</title>
+  <style>
+    .ventana {
+      background-color: #fff0f5;
+      border: 4px solid #ff80a0;
+      border-radius: 12px;
+      width: 320px;
+      padding: 20px;
+      font-family: 'Pixel', sans-serif;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .mensaje {
+      font-size: 14px;
+      color: #ff4081;
+      margin-bottom: 16px;
+      min-height: 50px;
+      padding: 8px;
+      background-color: #ffe4ec;
+      border-radius: 8px;
+      transition: opacity 0.5s ease;
+      opacity: 1;
+    }
+    button {
+      background-color: #ffcce0;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff99cc;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="ventana">
+    <h2>For you &lt;3</h2>
+    <div class="contenido">
+      <div id="mensaje" class="mensaje">Presiona el botón para recibir amorcito 🌸</div>
+      <button onclick="mostrarMensaje()">Grow!</button>
+    </div>
+  </div>
+
+  <script>
+    const mensajes = [
+      "Eres una estrella brillante 🌟",
+      "Tu arte tiene alma 💖",
+      "Nunca dejes de soñar ✨",
+      "Tu mundo Iris es pura magia 🐰🌸",
+      "Hoy es un buen día para crear algo hermoso 🎨",
+      "Tu energía ilumina todo 💫",
+      "Eres más fuerte de lo que crees 💪",
+      "Tu imaginación no tiene límites 🌈",
+      "Gracias por existir 💕",
+      "Sigue creciendo, como tú sabes hacerlo 🌱"
+    ];
+
+    let indice = 0;
+
+    function mostrarMensaje() {
+      const mensajeDiv = document.getElementById("mensaje");
+      mensajeDiv.style.opacity = 0;
+
+      setTimeout(() => {
+        mensajeDiv.textContent = mensajes[indice];
+        mensajeDiv.style.opacity = 1;
+        indice = (indice + 1) % mensajes.length;
+      }, 300);
+    }
+  </script>
+</body>
+</html>
+
